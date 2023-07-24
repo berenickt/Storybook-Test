@@ -8,11 +8,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:@typescript-eslint/recommended',
-  ],
+  extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:@typescript-eslint/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -23,6 +19,6 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint'],
   rules: {
-    'react/react-in-jsx-scope': 'off',
+    'react/react-in-jsx-scope': 'off', // jsx파일에서 import react from 'react'를 항상 사용하는 규칙
   },
-};
+}
