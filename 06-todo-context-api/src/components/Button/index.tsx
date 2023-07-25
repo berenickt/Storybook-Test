@@ -28,6 +28,7 @@ interface Props {
   readonly onClick?: () => void;
 }
 
+// color가 비어있다면, 초기화를 통해 데이터를 초기화
 export const Button = ({ label, color = '#ff5722', onClick }: Props) => {
   return (
     <Container color={color} onClick={onClick}>

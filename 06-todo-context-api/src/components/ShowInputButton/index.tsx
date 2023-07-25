@@ -13,6 +13,9 @@ interface Props {
   readonly onClick: () => void;
 }
 
+/**
+ * 닫기-할일추가 오른쪽 하단 버튼
+ */
 export const ShowInputButton = ({ show, onClick }: Props) => {
   return (
     <Container>

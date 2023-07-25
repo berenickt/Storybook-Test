@@ -12,9 +12,10 @@ const Container = styled.div`
   background-color: #eeeeee;
 `;
 
-function App() {
+export default function App() {
   return (
     <Container>
+      {/* **** Context를 사용하기 위해 공통 부모 컴포넌트에 Context의 Provider를 제공해야 함  */}
       <ToDoListContextProvider>
         <DataView />
         <InputContainer />
@@ -22,5 +23,3 @@ function App() {
     </Container>
   );
 }
-
-export default App;

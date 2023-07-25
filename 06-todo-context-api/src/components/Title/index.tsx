@@ -21,4 +21,3 @@ export const Title = ({ label }: Props) => {
     </Container>
   );
 };
-`

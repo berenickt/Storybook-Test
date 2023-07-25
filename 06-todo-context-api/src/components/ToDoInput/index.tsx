@@ -46,6 +46,9 @@ interface Props {
   readonly onClose: () => void;
 }
 
+/**
+ * 할일추가 input
+ */
 export const ToDoInput = ({ onClose }: Props) => {
   const { onAdd } = useContext(ToDoListContext);
   const [toDo, setToDo] = useState('');
