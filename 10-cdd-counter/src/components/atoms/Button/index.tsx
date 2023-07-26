@@ -2,7 +2,6 @@ import styled from '@emotion/styled'
 
 const Container = styled.button`
   border: 0;
-  //
   color: #ffffff;
   background-color: #ff5722;
   cursor: pointer;

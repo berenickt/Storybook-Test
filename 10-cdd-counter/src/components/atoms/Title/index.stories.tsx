@@ -14,7 +14,6 @@ export default {
 // Title 컴포넌트에 args 객체를 전달하여 동적인 컴포넌트를 생성
 const Template: ComponentStory<typeof Title> = args => <Title {...args} />
 
-// 5. Title은 Props가 없어서 따로 여러 스토리를 작성안해도 됨
 export const Default = Template.bind({})
 // Title컴포넌트의 스토리인 Default의 필수 Props인 title 설정
 Default.args = {
