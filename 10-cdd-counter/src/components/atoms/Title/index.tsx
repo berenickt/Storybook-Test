@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 
 const Label = styled.h1`
-  margin-bottom: 32px;
+  margin-bottom: 32px; //////////
 `
 
 interface Props {
