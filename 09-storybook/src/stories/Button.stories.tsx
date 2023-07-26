@@ -12,13 +12,13 @@ import { Button } from './Button';
  * ComponentMeta를 사용해 제공함
  */
 export default {
-  title: 'Example/Button',
+  title: 'Example/Button', // 메뉴 그룹의 이름들을 그룹화
   component: Button,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     // 버튼 컴포넌트의 backgroundColor라는 Props를 스토리북에서 변경할 떄 색상선태기를 표시
     // .storybook/preview.js 파일에서 색상선태긱가 표시되도록 matchers에 설정했었음
-    backgroundColor: { control: 'color' },
+    backgroundColor: { control: 'color' }, // 색상 선택기
   },
 } as ComponentMeta<typeof Button>;
 
@@ -38,9 +38,8 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
  * 캐멀케이스로 작성된 변수명에서 대문자는 띄어쓰기가 추가되어 표시됨
  */
 export const Primary = Template.bind({});
-
-// <Button /> 컴포넌트의 필수 Props인 "label"과 기본적인 primary라는 Props를 설정
 Primary.args = {
+  // <Button /> 컴포넌트의 필수 Props인 "label"과 기본적인 primary라는 Props를 설정
   primary: true,
   label: 'Button',
 };
