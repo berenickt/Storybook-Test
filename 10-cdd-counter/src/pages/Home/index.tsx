@@ -1,5 +1,5 @@
-import { CounterApp } from 'components/templates/CounterApp';
+import { CounterApp } from 'components/templates/CounterApp'
 
 export const Home = () => {
-  return <CounterApp />;
-};
+  return <CounterApp />
+}
