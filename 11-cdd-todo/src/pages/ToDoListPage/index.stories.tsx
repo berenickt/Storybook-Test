@@ -6,7 +6,7 @@ import { ToDoListContextProvider } from 'contexts/ToDoList';
 
 import { ToDoListPage } from '.';
 
-// 2. Templates라는 메뉴 하위에 ToDoListPage이라고 표시
+// 2. Pages라는 메뉴 하위에 ToDoListPage이라고 표시
 // 3. 컴포넌트는 ToDoListPage
 export default {
   title: 'Pages/ToDoListPage',
