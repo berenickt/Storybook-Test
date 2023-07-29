@@ -1,9 +1,13 @@
+# ESLint와 Prettier를 자동으로 실행하기 위해 Lefthook
+# pre-commit을 사용해 git에 커밋할 떄, 수정내용들이 커밋되기 전 설정한 명령어들이 실행되도록 함
 pre-commit:
-  parallel: true
+  parallel: true # 설정한 명령어들에 parallel 옵션을 사용해 동시에 실행되도록 설정
   commands:
+    # glob 옵션에 설정된 파일들이 변경됐을 때만 run 옵션을 실행
     prettier:
       glob: './src/**'
       run: npm run format
+    # .ts 또는 .tsx 확장명을 가진 파일들이 변경사항이 발생했을 때에만 run 옵션을 실행
     linter:
       glob: './src/**/*.{ts,tsx}'
       run: npm run lint
